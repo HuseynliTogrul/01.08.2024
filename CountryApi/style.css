@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #8080802b;
+}
+
+.dark-mode {
+    background-color: black;
+    color: #fff;
+}
+
+/* .light-mode {
+    background-color: white;
+    color: black;
+} */
+
+.container {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.world-header {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 170px;
+    margin-bottom: 30px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.world-input {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.input-left i {
+    color: gray;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.input-left input {
+    padding: 15px 0 15px 50px;
+    width: 200%;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input-right #country {
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.world-flags {
+    display: flex;
+    gap: 30px;
+}
+
+.world {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.world-name {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.world-img img {
+    width: 290px;
+    height: 174px;
+}
+
+.world-info-name {
+    padding: 20px 20px 40px 20px;
+}
+
+.world-info ul {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.world-info ul li span {
+    font-weight: 300;
+}

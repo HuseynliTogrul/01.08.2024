@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 
 <head>
     <meta charset="UTF-8">
@@ -13,99 +13,34 @@
 </head>
 
 <body>
-    <div class="world-header">
-        <h3>Where in the world?</h3>
-        <div class="header-right">
-            <i class="fa-solid fa-moon"></i>
-            <p>Dark Mode</p>
-        </div>
-    </div>
     <div class="container">
+        <div class="world-header">
+            <h3>Where in the world?</h3>
+            <div class="header-right">
+                <i class="fa-solid fa-moon"></i>
+                <p>Dark Mode</p>
+            </div>
+        </div>
         <div class="world-input">
             <div class="input-left">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Search for a country...">
+                <input id="searchInput" type="text" placeholder="Search for a country...">
             </div>
             <div class="input-right">
-                <select name="countries" id="country">
-                    <option value="Country" selected="true" disabled="disabled">Filter by Region</option>
-                    <option value="Africa">Africa</option>
-                    <option value="America">America</option>
-                    <option value="Asia">Asia</option>
-                    <option value="Europe">Europe</option>
-                    <option value="Oceania">Oceania</option>
-                </select>
+                <div class="filterBtn">
+                    <h3>Filter by Region</h3>
+                    <i class="fa-solid fa-chevron-up"></i>
+                </div>
+                <ul class="filterList hidden">
+                    <Li data-region = "Africa">Africa</Li>
+                    <Li data-region = "America">America</Li>
+                    <Li data-region = "Asia">Asia</Li>
+                    <Li data-region = "Europe">Europe</Li>
+                    <Li data-region = "Oceania">Oceania</Li>
+                </ul>
             </div>
         </div>
         <div class="world-flags">
-            <!-- <div class="world">
-                <div class="world-img">
-                    <img src="./assets/images/germany.png" alt="">
-                </div>
-                <div class="world-info-name">
-                    <div class="world-name">
-                        Germany
-                    </div>
-                    <div class="world-info">
-                        <ul>
-                            <li>Population: <span>81 000 000</span></li>
-                            <li>Region: <span>Oceania</span></li>
-                            <li>Capital: <span>Berlin</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="world">
-                <div class="world-img">
-                    <img src="./assets/images/usa.png" alt="">
-                </div>
-                <div class="world-info-name">
-                    <div class="world-name">
-                        USA
-                    </div>
-                    <div class="world-info">
-                        <ul>
-                            <li>Population: <span>81 000 000</span></li>
-                            <li>Region: <span>Oceania</span></li>
-                            <li>Capital: <span>Berlin</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="world">
-                <div class="world-img">
-                    <img src="./assets/images/brasil.png" alt="">
-                </div>
-                <div class="world-info-name">
-                    <div class="world-name">
-                        Brasil
-                    </div>
-                    <div class="world-info">
-                        <ul>
-                            <li>Population: <span>81 000 000</span></li>
-                            <li>Region: <span>Oceania</span></li>
-                            <li>Capital: <span>Berlin</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="world">
-                <div class="world-img">
-                    <img src="./assets/images/iceland.png" alt="">
-                </div>
-                <div class="world-info-name">
-                    <div class="world-name">
-                        Iceland
-                    </div>
-                    <div class="world-info">
-                        <ul>
-                            <li>Population: <span>81 000 000</span></li>
-                            <li>Region: <span>Europe</span></li>
-                            <li>Capital: <span>Berlin</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 

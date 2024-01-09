@@ -43,7 +43,9 @@ const displayCountries = (countries) => {
 
         worldFlags.innerHTML += `<div class="world">
                         <div class= "world-img">
-                            <img src="${country.flags.png}" alt="">
+                            <a href="./info.html">
+                                <img src="${country.flags.png}" alt="">
+                            </a>
                         </div>
                         <div class="world-info-name">
                             <div class="world-name">

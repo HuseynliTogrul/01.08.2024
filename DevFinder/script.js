@@ -39,6 +39,7 @@ const fetchUser = (developer) => {
         })
         .then((data) => {
             displayUser(data)
+            console.log(data);
         })
 }
 
@@ -52,7 +53,7 @@ btn.addEventListener("click", () => {
 
 
 const displayUser = (userData) => {
-    // const indexOfT = userData.created_at.indexof("T")
+    const indexOfT = userData.created_at.indexOf("T");
     repos.textContent = userData.public_repos;
     followers.textContent = userData.followers
     followings.textContent = userData.following

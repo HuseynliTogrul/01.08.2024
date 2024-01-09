@@ -23,9 +23,9 @@ let dev;
 
 const fetchUser = (developer) => {
     loading.classList.remove("hiddem");
+
     fetch(`https://api.github.com/users/${developer}`)
         .then((response) => {
-
             loading.classList.add("hidden");
 
             if (!response.ok) {
@@ -52,15 +52,14 @@ btn.addEventListener("click", () => {
 
 
 const displayUser = (userData) => {
-    const indexOfT = userData.created_at.indexof("T")
-
+    // const indexOfT = userData.created_at.indexof("T")
     repos.textContent = userData.public_repos;
     followers.textContent = userData.followers
-    followings.textContent = userData.followings
+    followings.textContent = userData.following
     bio.textContent = !userData.bio ? "No bio" : userData.bio
     username.textContent = "0" + userData.login
     username.href = userData.html_url
     img.src = userData.avatar_url
-    user.textContent = userData.username
+    user.textContent = userData.name
     joined.textContent = userData.created_at.slice(0, indexOfT)
 }

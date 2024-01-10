@@ -1,10 +1,10 @@
-.back{
+.back {
     padding: 0 50px;
     position: relative;
     margin-bottom: 50px;
 }
 
-.back button{
+.back button {
     border-radius: 4px;
     padding: 10px 35px;
     border: none;
@@ -12,9 +12,50 @@
     cursor: pointer;
 }
 
-.back i{
+.back i {
     position: absolute;
     top: 10px;
     left: 60px;
     color: rgba(0, 0, 0, 0.721);
+}
+
+.countryInfo {
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    gap: 8%;
+}
+
+.country-img img {
+    width: 400px;
+}
+
+.info {
+    display: flex;
+    gap: 80px;
+    margin: 15px 0 25px;
+}
+
+.info-left ul,
+.info-right ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-border {
+    display: flex;
+    gap: 20px;
+}
+
+.borderBtn {
+    display: flex;
+    gap: 10px;
+}
+
+.borderBtn button{
+    border: none;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.858);
+    cursor: pointer;
 }
